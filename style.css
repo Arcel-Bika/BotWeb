@@ -42,9 +42,10 @@ main {
 }
 
 #chatbox {
-    height: 300%;
     background-color: #f3ecee;
+    height: 400px;
     margin: 0px;
+    overflow: scroll;
 }
 
 #demande_utilisateur {
@@ -61,7 +62,6 @@ main {
     align-items: end;
     background-color: #3068D9;
     border-radius: 10px;
-    height: 25px;
     width: 60%;
     display: flex;
     padding: 7px;
@@ -74,7 +74,6 @@ main {
     align-items: start;
     background-color: #8095BF;
     border-radius: 10px;
-    height: 25px;
     width: 60%;
     display: flex;
     padding: 7px;
@@ -86,3 +85,26 @@ main {
 .button {
     background-color: #f3ecee;
 }
+
+/* Media Query
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 768px) {
+    .chat {
+        display: none;
+    }
+
+    .discussion {
+    width: 100%;
+    justify-content: center;
+    border-radius: 30px;
+    }
+}
+
+ }
+
+ @media only screen and (max-width: 1200px) {
+    body {
+        height: 100px;
+      }
+ } 
